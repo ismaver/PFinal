@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Carter One', sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #00a3ff;
+    padding: 20px; /* Espacio interno para mejor apariencia */
+}
+
+.container__content {
+    display: flex;
+    align-items: center;
+    text-align: center; /* Centrar el texto */
+}
+
+.container__description,
+.container__redes,
+.container__contactos,
+.container__logo {
+    margin: 20px; /* Espacio inferior para separar las secciones */
+    max-width: 400px;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__description img{
+    height: 10vw;
+    width: auto;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+.container__logo img{
+    height: 10vw;
+    // width: auto;
+    border-radius: 25px;
+    margin: 10px 10px 10px 50px; /* Espacio inferior para separar la imagen y el texto */
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    margin: 10px;
+}
+
+.container__contactos ul {
+    list-style: none;
+    padding: 0;
+}
+.container__redes ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.container__redes ul li a:hover{
+    transition: all .5s;
+    transform: scale(1.2);
+}
+
+.container__redes ul li,
+.container__contactos ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+.container__redes ul li a,
+.container__contactos ul li a {
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* Agregado: estilo para el pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+footer label {
+    display: block;
+    margin-top: 10px;
+}
+
+
+//RESPONSIVE
+@media(max-width:900px){
+    * {
+        font-size: 2.5vw !important;
+        margin: 5px !important;
+    }
+
+    .container__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Carter One', sans-serif;
+    font-size: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f8ff;
+    text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+//FORMULARIO DE CONTACTO
+.container__seccion1{
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.container__seccion1 h2{
+    font-size: 5vw;
+    color: #00a3ff;
+}
+.container__seccion1 p{
+    max-width: 950px;
+    word-wrap: break-word;
+    margin: 20px;
+    font-size: 1.6vw;
+}
+.container__seccion1 div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container__seccion1 button{
+    border: none;
+    font-size: 20px;
+    background-color: #00a3ff;
+    border-radius: 40px;
+    margin: 25px;
+    padding: 20px 40px;
+    color: #fff;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all .5s;
+}
+.container__seccion1 button:hover{
+    transform: scale(1.1);
+}
+.container__seccion2 img{
+    height: 45vw;
+}
+
+@media(max-width:900px){
+    .container__seccion1 button{
+        font-size: 15px;
+        margin: 5px;
+        padding: 10px 20px;
+    }
+}
+@media(max-width:587px){
+    .container__seccion1 h2,
+    .container__seccion1 p{
+        text-align: center;
+    }
+    .container__seccion1 p{
+        font-size: 10px;
+    }
+    .container__seccion1 div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

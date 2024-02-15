@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Carter One', sans-serif;
+    font-size: 20px;
+}
+.container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+//FORMULARIO
+.container__item ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-auto-rows: 240px;
+}
+.container__item{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    padding: 50px 18px;
+    cursor: pointer;
+    transition: 0.4s;
+    
+}
+.container__item:hover{
+    transform: scale(1.1);
+}
+
+
+//SECCION 1
+.container__item__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container__item__logo img{
+    height: 300px;
+    width: auto;
+}
+
+//SECCION 2
+.container__item__des label{
+    font-size: 25px;
+}
+.container__item__des p{
+    font-family: sans-serif;
+}
+
+//SECCION 3
+.container__item__price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+.container__item__price div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container__item__price div label{
+    margin: 0 15px;
+}
+.container__item__price div #price_old{
+    color: #f00;
+    text-decoration: line-through;
+}
+.container__item__price div #price_title{
+    color: #0f0;
+}
+
+
+
+.container__item button{
+    border: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #00a3ff;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s;
+}
+.container__item button:hover{
+    transform: scale(1.05);
+}

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Carter One', sans-serif;
+    font-size: 1.9vw;
+}
+.container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw; /* Ancho deseado */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del contenedor */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+.container img {
+    width: 100%; /* Ajusta el ancho de la imagen al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+    display: block; /* Asegura que la imagen se comporte correctamente en línea con el resto del contenido */
+    margin-left: auto;
+    margin-right: auto; /* Centra horizontalmente */
+  }
+
+.texto-encima {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    background-color: rgba(255, 255, 255, 0.7); /* color de fondo semi-transparente para mejorar la legibilidad */
+    padding: 0;
+    border-radius: 5px;
+    text-align: center;
+}
